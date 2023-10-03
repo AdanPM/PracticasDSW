@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <form action="ejercicio14.html" method="get">
+        <h1>Formulario de registro</h1>
+        <table width="33%">
+            <tr>
+                <td><label for="nombre">Nombre: </label></td>
+                <td><input type="text" name="nombre" id="" required maxlength="25"></td>
+            </tr>
+            <tr>
+                <td><label for="Apellidos">Apellidos: </label></td>
+                <td><input type="text" name="Apellidos" id="" required maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="sexo">Sexo: </label></td>
+                <td><input type="radio" name="sexo" id="Hombre">Hombre <input type="radio" name="sexo" id="Mujer">Mujer</td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo: </label></td>
+                <td>
+                    <input type="email" name="correo" id="" required></td>
+            </tr>
+            <tr>
+                <td><label for="poblacion">población:</label></td>
+                <td><select name="poblacion" id="poblacion" required>
+                    <option value="México">México</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Bolivia">Bolivia</option>
+                </select></td>
+            </tr>
+        </table>
+            
+        <br>
+
+        <table>
+            <tr>
+                <td style="padding: 5px;"> <input type="checkbox" name="ofertas" id="" checked>Deseo recibir información sobre novedades y ofertas</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"><input type="checkbox" name="condiciones" id="" required>Declaro haber leído y aceptar las condiciones generales del 
+                    programa y la normativa sobre protección de Datos</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"> <input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
