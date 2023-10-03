@@ -1,0 +1,48 @@
+/*ejercicio17*/
+*{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header, .nav, .footer, .section{
+    width: 100%;
+}
+
+body{
+    height: 100vh;
+}
+.header{
+    background-color: green;
+    height: 10%;
+}
+.nav{
+    height: 10%;
+    background-color: greenyellow;
+    margin-top: 1%;
+}
+
+.section{
+    display: flex;
+    height: 75%;
+    justify-content: space-around;
+
+}
+.article, .aside{
+    height: 95%; margin-top: 1%;
+}
+.article{
+    width: 20%;
+    background-color: rgb(4,180,174);
+}
+    .aside{
+    width: 55%;
+    background-color: rgb(244,250,88);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer{
+background-color:darkorchid;
+height: 8%;
+}
