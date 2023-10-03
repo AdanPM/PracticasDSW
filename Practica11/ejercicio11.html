@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi primer formulario</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-family: Century Gothic;
+    }
+    table
+    {
+        align: center;
+        text-align: left;
+        width: 33%;
+    }
+</style>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <h1>Formulario de registro - Mi primer formulario</h1>
+    <form action="" method="get">
+        <table align="center">
+            <tr>
+                <td>Nombres: </td>
+                <td><input type="text" class="form-control" name="nombre" id="" maxlength="50"> </td>
+            </tr>
+            <tr>
+                <td>Apellido: </td>
+                <td><input type="text" class="form-control" name="apellido" id="" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Sexo: </td>
+                <td><select name="sexo" id="">
+                    <option value="f">Mujer</option>
+                    <option value="h">Hombre</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Correo: </td>
+                <td><input type="email" name="corre" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="ofertas" id="" checked>Deseo recibir información sobre novedades y ofertas</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="condiciones" id="">Declaro haber leído y aceptar las condicione
+                generales del programa y la normativa sobre protección de datos</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
