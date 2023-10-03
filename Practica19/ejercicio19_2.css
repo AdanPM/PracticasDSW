@@ -1,0 +1,66 @@
+p::first-line{
+    color: red;
+}
+p::first-letter{
+    color:purple;
+    font-size: larger;
+    font-weight: bold;
+}
+p::before{
+    content: "# ";
+   
+}
+p::after{
+    content: "< - - ";
+}
+p::selection{
+    background-color: lightcoral;
+}
+td:empty
+{
+    background-color: red;
+}
+td:nth-child(2){
+    background-color: aquamarine;
+}
+td:nth-last-child(3){
+    background-color: yellow;
+}
+
+li:first-child{
+    color:blueviolet;
+}
+li:last-child{
+    color: red;
+}
+li:nth-of-type(3)
+{
+    color: blue;
+}
+li:nth-last-of-type(2)
+{
+    color:green
+}
+a:link{
+    color:red;
+}
+a:hover{
+    color: pink;
+}
+.btn:hover{
+    background-color: pink;
+}
+a:focus{
+    color: purple;
+}
+.btn:active{
+    background-color:yellow;
+}
+a:visited{
+    color:blue;
+}
+h4:lang(en) {
+  color:red;
+  text-decoration: underline;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

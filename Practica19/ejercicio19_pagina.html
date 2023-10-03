@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+            background-image: url(imagenes/gato.jpg);
+        }
+        header{
+            text-align: center;
+            font-family: century gothic;
+            background-color: lightcoral;
+        }
+        .container{
+            display: flex;
+        }
+        article{
+            background-color: lightcyan;
+            width: 100%;
+            text-align: center;
+            font-family: century gothic;
+            padding: 10px;
+            font-style: oblique;
+            border-radius: 20px;
+            border-style: dotted;
+        }
+        section{
+            background-color: lightpink;
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+            font-family: century gothic;
+            padding: 10px;
+            font-style:italic;
+            border-radius: 20px;
+            border-style: dashed;
+        }
+        #roedores{
+            background-color: azure;
+            width: 100%;
+            border: 1px blue solid;
+        }
+        #domesticos{
+            background-color: azure;
+            width: 100%;
+            border: 1px blue solid;
+        }
+        #aves{
+            background-color:cornsilk;
+            width: 100%;
+            border: 1px hotpink solid;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            box-shadow: 3px -3px purple;
+        }
+        #lroedores{
+            list-style-type: square;
+        }
+        #laves{
+            list-style-type: circle;
+        }
+        #ldomes{
+            list-style-type:georgian;
+        }
+    </style>
+</head>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <header>
+        <h1>Animales Bonitos</h1>
+    </header>
+    <div class="container">
+        <article>
+            Roedores
+            <table id="roedores" align="center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fotos</th>
+                </tr>
+                <tr>
+                    <td>Ardilla</td>
+                    <td><img src="imagenes/ardilla.jpg" alt="" srcset=""></td>
+                </tr>
+                <tr>
+                    <td>Ratón</td>
+                    <td><img src="imagenes/raton.jpg" alt="" srcset=""></td>
+                </tr>
+                <tr>
+                    <td>Otros ejemplos</td>
+                    <td>
+                        <ul>
+                            <li id="lroedores">Cobaya</li>
+                            <li id="lroedores">Hamster</li>
+                            <li id="lroedores">Castores</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <section>
+            Aves
+            <table id="aves" align="center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fotos</th>
+                </tr>
+                <tr>
+                    <td>
+                        Dodo
+                    </td>
+                    <td>
+                        <img src="imagenes/dodo.jpg" width="200px" height="200px" alt="" srcset="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Loro
+                    </td>
+                    <td>
+                        <img src="imagenes/loro.png" width="200px" height="200px" alt="" srcset="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Otros ejemplos</td>
+                    <td>
+                        <ul>
+                            <li id="laves">Pinguino</li>
+                            <li id="laves">Carpintero</li>
+                            <li id="laves">Agaporni</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            Domesticos
+            <table id="domesticos" align="center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fotos</th>
+                </tr>
+                <tr>
+                    <td>Perro</td>
+                    <td><img src="imagenes/perro.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Gato</td>
+                    <td><img src="imagenes/gatito.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Otros ejemplos</td>
+                    <td>
+                        <ul>
+                            <li id="ldomes">Pez</li>
+                            <li id="ldomes">Tortuga</li>
+                            <li id="ldomes">Periquito Australiano</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </div>
+</body>
+</html>
