@@ -1,0 +1,75 @@
+/*
+HEIGHT = altura         
+WIDTH = Ancho o largo
+MARGIN = Margen
+*/
+
+/* PONE LA PAGINA A LOS BORDES Y DA COLOR*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite; /*color*/
+}
+
+/* PONE BORDE A LOS ELEMENTOS MENCIONADOS*/
+header, section, footer, aside, article{
+    border: black 3px solid; /* COLOR, TAMAÑO, ESTILO*/
+    border-radius: 10px; /*redondea borde*/
+}
+
+/* PONE COLOR Y TAMAÑO DE HEADE, QUE TIENE DENTRO EL NAV*/
+header{
+    background-color: green; /*color*/
+    height: 15vh;
+    justify-content: space-around; /*Justifica el contenido para que se ajuste*/
+}
+/*ESTILO DE NAV*/
+nav{
+    background-color: greenyellow; /*color*/
+    margin: 10px;
+    margin-top: 30px;
+    height: 50%;
+}
+
+
+/* TAMAÑO DE CONTENEDOR, DISPLAY FLEX PARA MANDAR HACIA LA DERECHA Y TAMAÑO*/
+#contenedor{
+    height: 68vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+aside{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    background-color: cyan; /*color*/
+}
+
+/* SUB CONTENEDOR QUE CONTIENE EL SECTION Y LOS ARTICLE*/
+#subcontenedor{
+    display: flex;
+    width: 100%;
+}
+
+/* PONE COLOR Y TAMAÑO DE ELEMENTOS DENTRO DE SUBCONTENEDOR*/
+section{
+    height: 100%;
+    background-color: aquamarine; /*color*/
+    width: 100%;
+    margin: 10px;
+}
+
+article{
+    background-color: pink; /*color*/
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 30%;
+}
+
+/* PONE COLOR Y TAMAÑO DE FOOTER*/
+footer{
+    background-color: aquamarine; /*color*/
+    height: 80px; 
+}
