@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio21.css">
+    <style>
+        div#cabeza4 {
+            border: red solid 0.0625em;
+            /*padding: 0.3125em; */     /* 5px/16px = 0.3125em */
+            font: 2em bold 'Arial Black';
+            color: red;
+            position: relative;
+        }
+        div#cabeza4 div.headvinc {
+            position: absolute;
+            left: 0.7em;
+            top: 0.7em;
+            z-index: 1;
+        }
+        div#cabeza4 img.banner {
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+<!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <div id="cabeza_">
+        TITULO DE LA PÁGINA
+    </div>
+    <div id="lateral_">
+        <ul>
+            <li><a href="...1">Link 1</a></li>
+            <li><a href="...2">Link 2</a></li>
+            <li><a href="...3">Link 3</a></li>                      
+        </ul>
+    </div>
+    <div id="contenido_">
+        <p>...contenido...</p>
+        <p>...contenido...</p>
+        <p>...contenido...</p>
+    </div>
+    <div class="borra-flotacion_"></div>
+    <div id="pie_">
+        Este es el pie de página
+    </div> 
+    <br><br><br>
+
+    <div id="total">
+        <div id="cabeza">
+                TITULO DE LA PÁGINA
+            </div>
+            <div id="lateral">
+                <ul>
+                    <li><a href="...1">Link 1</a></li>
+                    <li><a href="...2">Link 2</a></li>
+                    <li><a href="...3">Link 3</a></li>                      
+                </ul>
+            </div>
+            <div id="contenido">
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+            </div>
+            <div class="borra-flotacion"></div>
+            <div id="pie">
+                Este es el pie de página
+            </div> 
+    </div>
+   
+    <!--
+        ESTRUCTURA FIJA
+        CONTENIDO CON CSS: Al momento de utilizar el css donde se define
+        una estructura fija, se aplica el estilo a los divs, lo que afecta
+        al color del borde del div y al tamaño de ancho.
+        Al ser estática, no importa como sea el tamaño de la ventana, siempre 
+        será del mismo tamaño, esto se definió en las siguientes lineas de código CSS
+        div#cabeza {
+            width: 750px; 
+            }
+        div#lateral {
+            width: 100px; 
+            }
+        div#contenido {
+            width: 638px; 
+            }
+        div#pie {
+            width: 750px; 
+            }
+
+        Al momento de añadir la continuacion del codigo, donde se encierra
+        todo el contenido en el div #Total, la estructura de la página es la misma en 
+        cuanto a las medidas del ancho de las secciones de los div, pues se ha
+        utilizado el margin auto para que la visualización del contenido sea en el centro de la pantalla
+
+        no importa que se haga el tamaño siempre sera el mismo
+    -->
+
+    <br><br><br>
+    
+    <div id="total2">
+        <div id="cabeza2">
+                TITULO DE LA PÁGINA
+            </div>
+            <div id="lateral2">
+                <ul>
+                    <li><a href="...1">Link 1</a></li>
+                    <li><a href="...2">Link 2</a></li>
+                    <li><a href="...3">Link 3</a></li>                      
+                </ul>
+            </div>
+            <div id="contenido2">
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+            </div>
+            <div class="borra-flotacion2"></div>
+            <div id="pie2">
+                Este es el pie de página
+            </div> 
+    </div>
+
+    <!--
+        ESTRUCTURA LÍQUIDA
+        CONTENIDO CON CSS: La diferencia principal radica en cuanto a 
+        la manera en que se especifica el tamaño de los anchos de los elementos
+        que se encuetran en la página HTML.
+        En este caso para lograr una estructura liquida se establecen los
+        tamaños de los width con %, se consigue saber el % a aplicar dividiendo
+        el tamaño original en px, sobre el tamaño total del elemento
+
+        la pagina se ira ajustando pero tiene un límite
+
+    -->
+ 
+    <br><br><br>
+    
+    <div id="total3">
+        <div id="cabeza4">
+            <div  class="headvinc"><a href="http://www.wextensible.com"><img
+            src="/res/img/wextensible.gif"
+            width="41" height="40" alt="wextensible"
+            title="www.wextensible.com" /></a>
+            TITULO DE LA PÁGINA</div>
+            <img src="imagenes/gatito2.png" class="banner" alt="banner" />
+        </div>
+            <div id="lateral3">
+                <ul>
+                    <li><a href="...1">Link 1</a></li>
+                    <li><a href="...2">Link 2</a></li>
+                    <li><a href="...3">Link 3</a></li>                      
+                </ul>
+            </div>
+            <div id="contenido3">
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+                <p>...contenido...</p>
+            </div>
+            <div class="borra-flotacion3"></div>
+            <div id="pie3">
+                Este es el pie de página
+            </div> 
+    </div>
+
+     <!--
+        ESTRUCTURA ELÁSTICA
+        CONTENIDO CON CSS: la diferencia que tiene esta estructura
+        es la manera en que se define el width, en este caso se tomo como
+        unidad de medida los em, que es una unidad relativa de acuerdo al
+        tamaño de fuente
+
+        la página siempre estará ajustada
+    -->
+    
+</body>
+</html>
