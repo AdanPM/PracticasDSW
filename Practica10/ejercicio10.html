@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-family: Century Gothic;
+    }
+</style>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <form action="ejercicio10.html" method="get">
+        <h1>Mi primer formulario</h1>
+        <label for="Nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" maxlength="10" placeholder="No mayor a 10 caracteres"> <br><br>
+        <label for="Edad">Edad:</label> <input type="number" name="edad" id="edad" min="10" max="18"> <br><br>
+        <label for="Genero">Genero</label> <select name="genero" id="genero"> 
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+        </select><br><br>
+        <input type="radio" name="hobbie" id="leer"> Leer <br><br>
+        <input type="radio" name="hobbie" id="caminar"> Caminar<br><br>
+        <input type="checkbox" name="De acuerdo" id="deacuerdo"> De acuerdo<br><br>
+        <input type="submit" value="Enviar"> <br><br>
+        <table align="center">
+            <tr>
+                <td>Comentarios:</td>
+                <td><textarea name="comentarios" id="comentarios" cols="30" rows="6"></textarea></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
