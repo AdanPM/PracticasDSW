@@ -1,0 +1,86 @@
+/*
+HEIGHT = altura         
+WIDTH = Ancho o largo
+MARGIN = Margen
+*/
+
+/* PONE LA PAGINA A LOS BORDES Y DA COLOR*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BORDER CON ESQUINAS CIRCULARES*/
+*{
+    border-radius: 10px;
+}
+
+/* HEADER, NAV Y FOOTER 70% ANCHO Y 50PX ALTO*/
+
+/* ESTILO HEADER */
+header{
+    background-color:rosybrown; /*color*/
+    width: 70%;
+    height: 50px;
+}
+
+/*ESTILO DE NAV*/
+nav{
+    background-color:rosybrown; /*color*/
+    width: 70%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* ESTILO FOOTER */
+footer{
+    background-color:rosybrown; /*color*/
+    width: 70%;
+    height: 50px;
+}
+
+
+/* DIV LLAMADO CONTENEDOR, 70% ANCHO, 350 PX ALTO*/
+#contenedor{
+    height: 350px;
+    width: 70%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* SECTION 65% ANCHO Y 350PX ALTO*/
+section{
+    height: 350px;
+    background-color:rosybrown; /*color*/
+    width: 100%;
+    margin: 10px;
+}
+
+/* ASIDE 30% ANCHO Y 350PX ALTO*/
+/* ALMACENADO EN SUBCONTENEDOR PARA PONER FLEX*/
+#subcontenedor{
+    display: flex;
+    width: 30%;
+    height: 350px;
+}
+
+aside{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    background-color:rosybrown; /*color*/
+}
+
+
+/*ARTICLE 90% ANCHO 35PX ALTO   (PUSE HEIGHT 75PX PARA QUE SE
+MIRARA MAS LINDO C: )*/
+article{
+    background-color: gray; /*color*/
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 75px;
+    width: 90%;
+}
+
