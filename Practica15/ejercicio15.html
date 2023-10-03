@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{
+        padding: 5px;
+    }
+</style>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO  GRUPO 372-->
+    <form action="ejercicio15.html" method="post">
+        <table>
+            <caption><h1 style="color: blue; font-weight: bold;">Formulario de registro</h1></caption>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" id="" required placeholder="Coloque nombre"></td>
+                <td>Correo:</td>
+                <td><input type="email" name="email" id="" required placeholder="Coloque email"></td>
+            </tr>
+            <tr>
+                <td>URL:</td>
+                <td><input type="url" name="url" id="" required placeholder="Coloque URL"></td>
+                <td>Fecha:</td>
+                <td><input type="date" name="fecha" id="" required></td>
+            </tr>
+            <tr>
+                <td>Tiempo:</td>
+                <td><input type="time" name="tiempo" id="" required ></td>
+                <td>Fecha y hora de nacimiento:</td>
+                <td><input type="datetime-local" name="fechahora" id="" required></td>
+            </tr>
+            <tr>
+                <td>Mes de nacimiento:</td>
+                <td><input type="month" name="mes" id="" required></td>
+                <td>Semana:</td>
+                <td><input type="week" name="semana" id="" required></td>
+            </tr>
+            <tr>
+                <td>Edad:</td>
+                <td><input type="number" name="edad" id="" required></td>
+                <td>Hrs. de internet:</td>
+                <td><input type="range" name="internet" id="" min="1" max="24" required></td>
+            </tr>
+            <tr>
+                <td>Telefono:</td>
+                <td><input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits" required></td>
+                <td>Palabra de búsqueda:</td>
+                <td><input type="search" name="palabrab" id="" required placeholder="Palabra de búsqueda"></td>
+            </tr>
+            <tr>
+                <td>Color favorito:</td>
+                <td><input type="color" name="color" id="" required></td>
+                <td></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
