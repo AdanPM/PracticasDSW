@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var valores=[true, 10, false, "código", "herramientas", 7];
+        //CUAL TEXTO ES MAYOR
+        var textomayor= valores[3]>valores[4];
+        var textomayordos= valores[4]>valores[3];
+        var respuestauno = valores[3]+" es mayor que "+valores[4]+": "+textomayor;
+        var respuestados = valores[4]+" es mayor que "+valores[3]+": "+textomayordos;
+        //DETERMINAR OPERADORES PARA OBTENER TRUE Y FALSE
+        var respuestafalse = valores[0]==valores[2];
+        var respuestatrue = valores[0]!=valores[2];
+
+        //DETERMINAR EL RESULTADO DE CINCO OPERACIONES CON LOS ELEMENTOS NUMERICOS
+        var suma=valores[1]+valores[5];
+        var resta=valores[1]-valores[5];
+        var multiplicación=valores[1]*valores[5];
+        var division=valores[1]/valores[5];
+        var residuo=valores[1]%valores[5];
+        
+        alert("SOLUCION 1: \n"+respuestauno+"\n"+respuestados
+        +"\n\nSOLUCIÓN 2: \nObteniendo False (usando ==): "+respuestafalse+"\nObteniendo True (usando !=): "+respuestatrue
+        +"\n\nSOLUCIÓN 3: \nNumeros usados: "+valores[1]+" y "+valores[5]+
+        "\nSuma: "+suma+"\nResta: "+resta+"\nMultiplicación: "+multiplicación+"\nDivisión: "+division+"\nResiduo: "+residuo);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
