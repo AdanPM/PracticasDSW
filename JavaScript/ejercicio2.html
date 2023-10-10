@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+        var peso_tierra = 9.807;
+        var peso_marte = 3.71;
+        var peso_jupiter = 24.79;
+
+        var peso = prompt("Ingrese su peso")
+        var opcion = prompt("Elige una opción\n1. Marte\n2. Júpiter")
+        switch(opcion)
+        {
+            case "1":
+            var resultado = peso*(peso_marte/peso_tierra);
+                alert("Su peso en marte es: "+resultado);
+                break;
+            case "2":
+                var resultado = peso*(peso_jupiter/peso_tierra);
+                alert("Su peso en júpiter es: "+resultado);
+                break;
+            default:
+                alert("No existe esa opción");
+                break;
+        }
+
+        if(opcion==1)
+        {
+            var resultado = peso*(peso_marte/peso_tierra);
+                alert("Su peso en marte es: "+resultado);
+        }
+        else if(opcion==2)
+        {
+            var resultado = peso*(peso_jupiter/peso_tierra);
+                alert("Su peso en júpiter es: "+resultado);
+        }
+        else
+        {
+            alert("No existe esa opción");
+        }
+
+    </script>
+</head>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO-->
+</body>
+</html>
