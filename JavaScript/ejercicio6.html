@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        const meses = { 0: "Enero", 1: "Febrero", 2: "Marzo",3: "Abril", 4: "Mayo", 5: "Junio",6: "Julio", 7: "Agosto", 8: "Septiembre",9: "Octubre", 10: "Noviembre"};
+        for (const mes in meses) {
+            if(mes != 6)
+            {
+                  alert(`${mes}: ${meses[mes]}`);
+            }
+        }
+
+        const mesesdos = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre'];
+        mesesdos.forEach(function (element) {
+            if(element != "Julio")
+            {
+                  alert(element);
+            }
+        });
+
+        nuevo = "Diciembre";
+        let mesnuevo = mesesdos.push(nuevo);
+
+        for (let value of mesesdos) {
+            alert(value);
+        }
+        
+        
+
+    </script>
+</head>
+<body>
+    <!--PRECIADO MASCAREÑO ADAN ALBERTO-->
+</body>
+</html>
