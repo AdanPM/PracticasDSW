@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        let dias = ["Lunes", "Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+        alert("Total de valores en arreglo: "+dias.length);
+        txtarray="";
+        for(var i=0; i<dias.length;i++)
+        {
+            txtarray=txtarray+dias[i]+" ("+ i +")\n";
+        }
+        alert("Imprimiendo valores de array: \n" + txtarray);
+        var nuevo = prompt("Ingrese un valor al array: ");
+        let diasnuevo = dias.push(nuevo);
+        txtarray="";
+        for(var i=0; i<dias.length;i++)
+        {
+            txtarray=txtarray+dias[i]+" ("+ i +")\n";
+        }
+        alert("Imprimiendo nuevos valores de array: \n" + txtarray);
+        var eliminar=prompt("Elige que valor eliminar usando el número de ID: \n"+txtarray);
+        dias.splice(eliminar,1);
+       
+        txtarray="";
+        for(var i=0; i<dias.length;i++)
+        {
+            txtarray=txtarray+dias[i]+" ("+ i +")\n";
+        }
+        alert("Imprimiendo nuevos valores de array: \n" + txtarray);
+    </script>
+</head>
+<!--PRECIADO MASCAREÑO ADAN ALBERTO-->
+<body>
+    
+</body>
+</html>
