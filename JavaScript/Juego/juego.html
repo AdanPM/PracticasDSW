@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 maravillas</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <header>MUNDO JUEGOS</header>
+    <h1>¿Qué juego quieres jugar?</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>¿Qué maravilla del mundo es?</p>
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+        <p>¿Qué bandera del mundo es?</p>
+        <button class="btn" onclick="comenzarJuegoBanderas()">JUGAR</button>
+    </div>
+  
+    <!-- Pantalla juego 7 maravillas -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/chichen-itza.svg" alt="" id="imgMaravilla">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final 7 maravillas-->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+
+
+    <!-- Pantalla juego BANDERAS -->
+    <div class="pantalla-juego-banderas" id="pantalla-juego-banderas">
+        <img src="img/mexico.svg" alt="" id="imgBandera">
+        <div class="opciones">
+            <div class="opcionbandera" id="op0bandera" onclick="comprobarRespuestaBandera(0)">
+                <div class="letrabandera" id="l0bandera">A</div>
+                <div class="nombrebandera" id="n0bandera">OPCION A</div>
+            </div>
+            <div class="opcionbandera" id="op1bandera" onclick="comprobarRespuestaBandera(1)">
+                <div class="letrabandera" id="l1bandera">B</div>
+                <div class="nombrebandera" id="n1bandera">OPCION B</div>
+            </div>
+            <div class="opcionbandera" id="op2bandera" onclick="comprobarRespuestaBandera(2)">
+                <div class="letrabandera" id="l2bandera">C</div>
+                <div class="nombrebandera" id="n2bandera">OPCION C</div>
+            </div>
+            <div class="opcionbandera" id="op3bandera" onclick="comprobarRespuestaBandera(3)">
+                <div class="letrabandera" id="l3bandera">D</div>
+                <div class="nombrebandera" id="n3bandera">OPCION D</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final banderas-->
+    <div id="pantalla-final-banderas">
+        <h2>CORRECTAS: <span id="numCorrectasBanderas"></span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectasBanderas"></span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <footer>MUNDO JUEGOS</footer>
+    
+    <script src="juego.js"></script>
+</body>
+</html>
