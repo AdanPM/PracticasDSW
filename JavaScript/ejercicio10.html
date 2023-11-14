@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function validar()
+        {
+            let bandera=0;
+            if(document.getElementById("espanol").value==0 || document.getElementById("espanol").value==null)
+            {
+                document.getElementById("espanol").focus();
+                bandera=1;
+            }
+            if(document.getElementById("matematicas").value==0 || document.getElementById("matematicas").value==null)
+            {
+                document.getElementById("matematicas").focus();
+                bandera=1;
+            }
+            if(document.getElementById("ciencias").value==0 || document.getElementById("ciencias").value==null)
+            {
+                document.getElementById("ciencias").focus();
+                bandera=1;
+            }
+            if(document.getElementById("ingles").value==0 || document.getElementById("ingles").value==null)
+            {
+                document.getElementById("ingles").focus();
+                bandera=1;
+            }
+            if(document.getElementById("valores").value==0 || document.getElementById("valores").value==null)
+            {
+                document.getElementById("valores").focus();
+                bandera=1;
+            }
+            if(document.getElementById("programacion").value==0 || document.getElementById("programacion").value==null)
+            {
+                document.getElementById("programacion").focus();
+                 bandera=1;
+            }
+            if(document.getElementById("deportes").value==0 || document.getElementById("deportes").value==null)
+            {
+                document.getElementById("deportes").focus();
+                bandera=1;
+            }
+            if(document.getElementById("artes").value==0 || document.getElementById("artes").value==null)
+            {
+                document.getElementById("artes").focus();
+                bandera=1;
+            }
+            if(bandera==0)
+            {
+                calificaciones();
+            }
+            
+        }
+        function calificaciones()
+        {
+            let calespanol = parseInt(document.getElementById("espanol").value);
+            let calmatematicas = parseInt(document.getElementById("matematicas").value);
+            let calciencias = parseInt(document.getElementById("ciencias").value);
+            let calingles = parseInt(document.getElementById("ingles").value);
+            let calvalores = parseInt(document.getElementById("valores").value);
+            let calprogramacion = parseInt(document.getElementById("programacion").value);
+            let caldeportes = parseInt(document.getElementById("deportes").value);
+            let calartes = parseInt(document.getElementById("artes").value);
+
+            let promedio = (calespanol+calmatematicas+calciencias+calingles+calvalores+calprogramacion+caldeportes+calartes)/8;
+            let mensaje="";
+            if(promedio>=85)
+            {
+                mensaje="EXCENTO EL EXAMEN";
+            }
+            else
+            {
+                mensaje="NO EXCENTO EL EXAMEN";
+            }
+            alert(mensaje+"\nCalificaciones \nEspañol: "+calespanol+"\nMatemáticas: "+calmatematicas+
+            "\nCiencias: "+calciencias+"\nIngles: "+calingles+
+            "\nValores: "+calvalores+"\nProgramacion: "+calprogramacion+
+            "\nDeportes: "+caldeportes+"\nArtes: "+calartes+"\nPromedio: "+promedio);
+        }
+    </script>
+</head>
+<body>
+    <!-- Adan Alberto Preciado Mascareño -->
+    <table align="center">
+        <tr>
+            <td>Materia</td>
+            <td>Calificación</td>
+        </tr>
+        <tr>
+            <td>Español</td>
+            <td><input type="number" name="espanol" min="0" max="100" id="espanol"></td>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td><input type="number" name="matematicas" min="0" max="100" id="matematicas"></td>
+        </tr>
+        <tr>
+            <td>Ciencias</td>
+            <td><input type="number" name="ciencias" min="0" max="100" id="ciencias"></td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td><input type="number" name="ingles" min="0" max="100" id="ingles"></td>
+        </tr>
+        <tr>
+            <td>Valores</td>
+            <td><input type="number" name="valores" min="0" max="100" id="valores"></td>
+        </tr>
+        <tr>
+            <td>Programación</td>
+            <td><input type="number" name="programacion" min="0" max="100" id="programacion"></td>
+        </tr>
+        <tr>
+            <td>Deportes</td>
+            <td><input type="number" name="deportes" min="0" max="100" id="deportes"></td>
+        </tr>
+        <tr>
+            <td>Artes</td>
+            <td><input type="number" name="artes" min="0" max="100" id="artes"></td>
+        </tr>
+        <tr colspan="2">
+            <td><input type="button" value="Enviar" onclick="validar();">Enviar</td>
+        </tr>
+       
+    </table>
+</body>
+</html>
