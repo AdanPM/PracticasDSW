@@ -1,0 +1,425 @@
+/*---------------- Globales ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/Barcos.jpg);
+    /* background-position: center;
+    background-size: cover;
+    box-sizing: border-box; */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+.contenedor-textos p {
+    color: #000;
+}
+
+/*---------------- Header ------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 2.7%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li a {
+    color: #ffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(109, 145, 168);
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 8%;
+    margin-top: 150px;
+}
+
+.col {
+    flex-basis: 45%;
+}
+
+h1 {
+    color: #ffff;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.row p{
+    color: #ffff;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #ffff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: white;
+    background-color: #000;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*---------------- Historia ------------*/
+
+.titulo {
+    color: #642A73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenedor-turistas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-turistas {
+    width: 48%;
+}
+
+.turistas .contenedor-textos {
+    width: 48%;
+}
+
+.contenedor-textos h3 {
+    margin-bottom: 15px;
+}
+
+.turistas .contenedor-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.vikingos {
+    background-color: #f2f2f2;
+}
+
+.galeria-viki {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-viki {
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    height: 180px;
+}
+
+.imagen-viki > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.imagen-viki:hover .hover-galeria {
+    transform: scale(1);
+}
+
+.vikingos .contenedor-textos p{
+    padding: 10px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    background: #4D0686;
+    display: flex;
+    width: 48%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.cards .card p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card {
+    width: 60%;
+    color: #fff;
+    font-weight: 300;
+}
+
+.crisis {
+    background: #F2F2F2F2;
+    margin-bottom: 30px;
+}
+
+.crisis-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.crisis-ind {
+    width: 42.5%;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #5D6D7E;
+    padding: 10px 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.crisis-ind img {
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.crisis-ind p {
+    margin: 10px 0;
+    color: #fff;
+    padding: 0px 0px 5px 10px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.independencia .contenedor-turistas .contenedor-textos > p{
+    padding: 0px 0px 30px 0px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 15px;
+}
+
+/*---------------- Footer ------------*/
+
+footer {
+    padding: 0px;
+    background-color: #000;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+/*---------------- Responsivo ------------*/
+
+@media(max-width: 991px) {
+
+    label {
+        display: initial;
+    }
+
+    .menu-icono {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ nav {
+        display: initial;
+    }
+
+    .container {
+        height: 0vh;
+    }
+
+    .row {
+        margin-top: 0;
+        text-align: center;
+        padding: 0px 75px;
+    }
+
+    .row p{
+        padding: 20px 0px;
+        font-weight: 600;
+    }
+
+    .col h1 {
+        font-size: 45px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces img {
+        margin: 10px 0px;
+    }
+
+    .enlace {
+        flex-direction: column;
+        padding: 25px 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+    }
+}

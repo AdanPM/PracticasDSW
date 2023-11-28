@@ -1,0 +1,268 @@
+
+body {
+
+    /* Ubicación de la imagen */
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/islandiaregistro.jpg);
+    
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+    background-color: white;
+    
+}
+
+/*---------------- Header ------------*/
+
+.header {
+    /* min-height: 70vh; */
+    height: 20vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+
+.menu .navbar ul li a {
+    color: #ffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(109, 145, 168);
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content  h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #EBAD8D;
+}
+
+/*---------------- Responsivo ------------*/
+
+@media(max-width: 991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu-icono {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    } 
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .principal {
+        padding: 30px;
+    }
+
+    .principal-content h2{
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .principal-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .principal-img {
+        display: none;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .services-1 p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2 h2 {
+        font-size: 40px;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces img {
+        margin: 10px 0px;
+    }
+
+    .enlace {
+        flex-direction: column;
+        padding: 25px 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+    }
+}

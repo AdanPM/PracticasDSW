@@ -1,0 +1,314 @@
+/*---------------- Globales ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 5, 154 , 0.5);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Islandia.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    /* max-width: 1320px;*/
+}
+
+/*---------------- Header ------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 2.7%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li a {
+    color: #ffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(109, 145, 168);
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #ffff;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+p{
+    color: #ffff;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #ffff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: white;
+    background-color: #000;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card::before {
+    content:'';
+	position: absolute;
+    top: 15;
+	bottom: 15;
+	left: 15;
+	right: 15;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Historia2.jpg);
+}
+
+.card2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Lugares_Turisticos2.jpg);
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Platillos2.jpg);
+}
+
+.card4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Bandera2.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #ffff;
+    text-shadow: 0 0 5px #999;
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contenedor {
+    margin: 0px auto;
+}
+
+/*---------------- Footer ------------*/
+
+footer {
+    padding: 70px 50px 30px 50px;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+/*---------------- Responsivo ------------*/
+
+@media(max-width: 991px) {
+
+    label {
+        display: initial;
+    }
+
+    .menu-icono {
+        display: initial;
+    }
+
+    .navbar {
+        padding-top: 15px;
+    }
+
+    nav {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ nav {
+        display: initial;
+    }
+
+    .container {
+        height: 0%;
+    }
+
+    .row {
+        margin-top: 75px;
+        text-align: center;
+        padding: 0px 75px;
+        flex-direction: column;
+    }
+
+    .row p{
+        padding: 20px 7.5px;
+        font-weight: 600;
+    }
+
+    .col {
+        margin: 0px 0px 20px 0px;
+    }
+
+    h5 {
+        text-transform: uppercase;
+    }
+
+    .card p {
+        font-size: 12.5px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces img {
+        margin: 10px 0px;
+    }
+
+    .enlace {
+        flex-direction: column;
+        padding: 25px 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+    }
+}

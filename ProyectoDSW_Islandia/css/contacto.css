@@ -1,0 +1,265 @@
+/*---------------- Globales ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*---------------- Header ------------*/
+
+.header {
+    /* min-height: 70vh; */
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/Contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+
+.menu .navbar ul li a {
+    color: #ffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(109, 145, 168);
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content  h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #fff;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #EBAD8D;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color: crimson;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.links > a {
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+}
+
+.links > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+/*---------------- Footer ------------*/
+
+.footer {
+    padding: 50px 0px 30px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+/*---------------- Responsivo ------------*/
+
+@media screen and (max-width: 991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu-icono {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 0vh;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .enlaces img {
+        margin: 10px 0px;
+    }
+
+    .enlace {
+        flex-direction: row;
+        padding: 5px 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 624px){
+    footer {
+        display: none;
+    }
+}

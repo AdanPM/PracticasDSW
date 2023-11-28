@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Aqui se pueden observar los links de archivos css y librearias que usamos de páginas exteriores -->
+
+    <link rel="stylesheet" href="./css/turistico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@200&family=Nosifer&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Lugares Turisticos</title>
+</head>
+
+    <!-- Aqui se pueden obervar los estilos locales -->
+
+<style>
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+    h2,h3{
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+<body>
+
+    <!-- En esta sección abarca el header y menu principal de la página -->
+
+    <header class="header">
+        <div class="menu contenedor">
+            <a href="index.html"><img src="./images/logo.png" class="logo" /></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="./images/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <!-- Menu principal -->
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Turistico.html">Lugares Turisticos</a></li>
+                    <li><a href="Platillos.html">Platillos Tipicos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.php">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content contenedor">
+            <h1>Lugares Turisticos</h1>
+            <p>La belleza de Islandia y sus paisajes combinando las zonas montañosas y volcánicas junto con la maravilla natural de los glaciares y géisers, le han dado a este país un boom turístico en los últimos años.
+                 Aquí te dejamos los top 5 lugares turísticos en Islandia que sin duda te asombrarán.</p>
+            <a href="" class="btn-1">Información</a>
+        </div>
+    </header>
+
+    <!-- En esta sección abarca el contenido principal de la página -->
+
+    <main class="lugares contenedor">
+
+        <!-- La clase lugar indica un cuadro que se muestra en html -->
+
+        <div class="lugar">
+            <img src="./images/Montaña.svg" />
+            <h3>Círculo Dorado</h3>
+            <p>La ruta del Círculo Dorado en Islandia abarca tres de los sitios más visitados en este país: la cascada de Gullfoss, los géisers en el valle de Haukadalur y el Parque Nacional de Thingvellir.</p>
+        </div>
+        <div class="lugar">
+            <img src="./images/Cueva.svg" />
+            <h3>Glaciar de Langjökull</h3>
+            <p>Es el segundo glaciar más grande de Islandia, tiene más de 900 kilómetros cuadrados y es uno de los sitios más importantes de este país por la famosa cueva de hielo que se puede visitar.</p>
+        </div>
+        <div class="lugar">
+            <img src="./images/Lago.svg" />
+            <h3>Laguna Azul</h3>
+            <p>Este impresionante balneario de aguas termales se ha convertido en el spa natural que todo mundo quiere visitar.</p>
+        </div>
+        <div class="lugar">
+            <img src="./images/Cascadas.svg" />
+            <h3>Cascada de Skógafoss</h3>
+            <p>Esta famosa catarata ubicada muy cerca del pueblo de Skógar, es considerada una de las más hermosas de Islandia.</p>
+        </div>
+        <div class="lugar">
+            <img src="./images/Playa.svg" />
+            <h3>Playa de arena negra en Vík í Mýrdal</h3>
+            <p>Las playas de arena negra que se pueden encontrar en el mundo son contadas, y en Islandia es un must visitarlas.</p>
+        </div>
+    </main>
+
+    <!-- En esta sección se muestra la otra mitad del contenido princial -->
+
+    <section class="portafolios contenedor">
+        <h2>DESTINOS TURÍSTICOS</h2>
+
+        <!-- La clase portafolio indica que se muestra individualmente los cuadros de esta sección -->
+
+        <div class="portafolio">
+            <img src="./images/Lugar1.jpg" />
+            <div class="portafolio-1">
+                <h3>Círculo Dorado</h3>
+                <p>La Cascada de Gullfoss es una de las más espectaculares en el mundo, ya que se formó a partir de la ruptura de las placas tectónicas en Islandia. El salto de agua de 32 metros crea un sonido ensordecedor al caer en un impresionante cañón natural.</p>
+                <a href="" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="portafolio">
+            <div class="portafolio-2">
+                <h3>Glaciar de Langjökull</h3>
+                <p>Esta cueva fue construida por el hombre y tiene 300 metros de largo. Uno de sus grandes atractivos es que la puedes visitar todo el año y apreciar la magia de estar dentro del glaciar recorriendo sus hermosas paredes blancas y azules.</p>
+                <a href="" class="btn-2">Información</a>
+            </div>
+            <img src="./images/Lugar2.jpg" />
+        </div>
+        <div class="portafolio">
+            <img src="./images/Lugar3.jpg" />
+            <div class="portafolio-1">
+                <h3>Laguna Azul</h3>
+                <p>Además del hermoso entorno que rodea a Blue Lagoon, la deliciosa temperatura del agua entre 37-39°C y las propiedades del barro de la laguna te llevarán a un estado de relajación total.</p>
+                <a href="" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="portafolio">
+            <div class="portafolio-2">
+                <h3>Cascada de Skógafoss</h3>
+                <p>Esta cascada se suele acompañar de los más bellos arcoíris que contrastan con el verde del paisaje al visitarse en los meses más cálidos de primavera y verano. Skógafoss es sin duda una parada obligada que te robará más de un suspiro.</p>
+                <a href="" class="btn-2">Información</a>
+            </div>
+            <img src="./images/Lugar4.jpg" />
+        </div>
+        <div class="portafolio">
+            <img src="./images/Lugar5.jpg" />
+            <div class="portafolio-1">
+                <h3>Playa de arena negra en Vík í Mýrdal</h3>
+                <p>Su color se debe a los restos de piedra volcánica que caracteriza a Islandia. Además de su particular color negro, uno de los principales motivos para visitar esta playa de Vik son los famosos Reynisdrangur, tres formaciones rocosas que se consideran trolls gigantes de roca.</p>
+                <a href="" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- En esta sección se muestra el footer de la pagina -->
+
+    <footer>
+        <div class="contenedor">
+            <div class="info">
+                <!-- <div class="info-content">
+                    <div class="info-price">
+                        <h2>Costo</h2>
+                        <p class="price">$4500</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non adipisci tempora nemo dicta expedita voluptates, repudiandae consequatur excepturi neque pariatur et saepe molestias placeat quia sequi ab dolores. Expedita.</p>
+                    </div>
+                    <div class="info-text">
+                        <h2>Pricing List</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim consequatur dolorum vitae expedita impedit placeat blanditiis corporis reiciendis sapiente, aperiam ab, culpa illum hic beatae, maiores iusto atque consequuntur perspiciatis.</p>
+                        <a href="" class="btn-1">Información</a>
+                    </div>
+                </div> -->
+                <hr>
+                <div class="enlaces">
+                    <a href="index.html"><img src="./images/logo.png" class="logo" /></a>
+                    <div class="enlace">
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Turistico.html">Lugares Turisticos</a></li>
+                        <li><a href="Platillos.html">Platillos Tipicos</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="Registro.php">Registro</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Aqui se pueden observar los links de archivos css y librearias que usamos de páginas exteriores -->
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@200&family=Nosifer&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Islandiopolis</title>
+</head>
+
+    <!-- Aqui se pueden obervar los estilos locales -->
+
+    <style>
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2,h3{
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+<body>
+
+    <!-- En esta sección abarca el contenido completo de la página-->
+
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="./images/logo.png" class="logo" /></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="./images/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <!-- En esta sección abarca el header y menu principal de la página -->
+            
+            <nav>
+                <ul>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Turistico.html">Lugares Turisticos</a></li>
+                    <li><a href="Platillos.html">Platillos Tipicos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.php">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Islandia</h1>
+                <p>Islandia es un país insular nórdico que se caracteriza por su espectacular paisaje con volcanes, géiseres, termas y campos de lava.
+                    Cuenta con enormes glaciares protegidos en los parques nacionales de Vatnajökull y Snæfellsjökull. 
+                    La mayoría de la población vive en la capital, Reikiavik, que se abastece de energía geotérmica y alberga el Museo Nacional y el Museo de Saga, que recorren la historia vikinga de Islandia</p>
+                <a href="Historia.html"><button type="button">Explorar</button></a>
+            </div>
+            <div class="col">
+                <a href="Historia.html">
+                    <div class="card card1">
+                        <h5>Historia</h5>
+                        <p>La historia de Islandia es relativamente reciente, tanto en el aspecto geológico como en el sociológico, pues las primeras poblaciones habitadas en Islandia no tuvieron lugar hasta casi el siglo IX d.C. </p>
+                    </div>
+                </a>
+                <a href="Turistico.html">
+                    <div class="card card2">
+                        <h5>Lugares Turisticos</h5>
+                        <p>Sin duda, opciones turísticas para todas aquellas personas que durante sus vacaciones buscan experiencias culturalmente enriquecedoras.</p>
+                    </div>
+                </a>
+                <a href="Platillos.html">
+                    <div class="card card3">
+                        <h5>Platillos</h5>
+                        <p>Islandia es famosa por sus impresionantes paisajes, pero también tiene una deliciosa y abundante comida local.</p>
+                    </div>
+                </a>
+                <a href="Registro.php">
+                    <div class="card card4">
+                        <h5>Registro</h5>
+                        <p>La vida en Islandia es única y ofrece una combinación única de naturaleza, cultura y calidad de vida.</p>
+                    </div>
+                </a>                                                            
+            </div>
+        </div>
+
+        <!-- En esta sección se muestra el footer de la pagina -->
+        
+        <footer>
+            <div class="contenedor">
+                <div class="enlaces">
+                    <a href="index.html"><img src="./images/logo.png" class="logo" /></a>
+                    <div class="enlace">
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Turistico.html">Lugares Turisticos</a></li>
+                        <li><a href="Platillos.html">Platillos Tipicos</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="Registro.php">Registro</a></li>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

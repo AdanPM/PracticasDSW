@@ -1,0 +1,423 @@
+/*---------------- Globales ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*---------------- Header ------------*/
+
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../images/Turistico.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+
+.menu .navbar ul li a {
+    color: #ffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(109, 145, 168);
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content  h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 1px solid #AAB1FF;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.btn-1:hover {
+    background-color: #AAB1FF;
+}
+
+/*---------------- Contenido ------------*/
+
+.lugares {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.lugar {
+    padding: 25px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 20px rgba(135, 141, 214, 0.3);
+    width: 200px;
+}
+
+.lugar img {
+    margin-top: -75px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(35, 25, 170, 0.839);
+    background-color: #fff;
+}
+
+.lugar h3 {
+    font-size: 20px;
+    color: #0E0E0E;
+    margin-bottom: 10px;
+}
+
+.lugar p {
+    color: #525254;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.portafolios {
+    padding: 80px 0px;
+    text-align: center;
+    color: #0E0E0E;
+}
+
+.portafolios h2 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-size: 65px;
+}
+
+.portafolio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.portafolio h2 {
+    font-size: 55px;
+}
+
+.portafolio img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.portafolio-1 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.portafolio-1 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.portafolio-1 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.portafolio-2 {
+    text-align: left;
+    margin-right: 100px;
+}
+
+.portafolio-2 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.portafolio-2 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #7042B5;
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.btn-2:hover {
+    background-color: #8650D7;
+}
+
+/*---------------- Footer ------------*/
+
+footer {
+    padding: 200px 0px 30px 0px;
+    background-image: url(../images/footer.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-price {
+    padding: 35px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 150px 0px 0px;
+    color: #0E0E0E;
+}
+
+.info-price h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 14px;
+    color: #0EAEF3 !important;
+    margin-bottom: 10px;
+}
+
+.info-price p {
+    font-size: 16px;
+    color: #525254;
+}
+
+.info-txt {
+    margin-left: 35px;
+    color: #fff;
+}
+
+hr {
+    margin: 45px 0px;
+    border: 0.5px solid #AAB1FF;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+/*---------------- Responsivo ------------*/
+
+@media(max-width: 991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu-icono {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    } 
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .lugares {
+        flex-direction: column; 
+        padding: 60px 30px 0px 30px;
+        align-items: center;
+    }
+
+    .lugar {
+        margin-bottom: 75px;
+    }
+
+    .portafolios {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .portafolios h2 {
+        margin-bottom: 15px;
+    }
+
+    .portafolio {
+        flex-direction: column;
+    }
+
+    .portafolio img {
+        display: none;
+    }
+
+    .portafolio-1 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .portafolio-2 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    footer {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-price {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .info-txt {
+        margin: 0px;
+    }
+
+    hr {
+        margin: 25px 0px;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces img {
+        margin: 10px 0px;
+    }
+
+    .enlace {
+        flex-direction: column;
+        padding: 25px 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+    }
+}
